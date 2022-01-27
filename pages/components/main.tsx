@@ -7,22 +7,26 @@ export default function Main() {
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">¡Este podría</h1>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">ser tu ride!</h1>
             </div>
-               
-              {/*   <button className="bg-transparent hover:bg-blue-700 border border-break.away-blue font-bold py-2 px-4 rounded-full">
+            <div className="absolute top-1/4 left-1/2 ">   
+                <button className="bg-transparent hover:bg-blue-700 border border-break.away-blue font-bold py-2 px-4 rounded-full">
                     Más info
                 </button>
-                <h1 className="text-2xl">
+            </div>
+            <div className="absolute top-1/3 left-1/2 ">  
+               <h1 className="text-4xl">
                     Sé parte de
                 </h1>
-                <h1 className="text-2xl text-break.away-blue">
+                <h1 className="text-5xl text-break.away-blue">
                     Break.Away
                 </h1>
-                <p>
+                <p className="w-80">
                     Somos un proyecto qué busca fortalecer la comunidad ciclista, publicitando distintos eventos que se organizan en el país. 
                 </p>
-                <p className="text-break.away-blue">
+                <p className="text-break.away-blue w-80">
                     Pronto podrás inscribirte a cualquiera de los eventos o inclusive publicar eventos.
-                </p> */}
+                </p> 
+            </div>
+               
             
            
             <Image
