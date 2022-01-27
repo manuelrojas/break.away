@@ -1,0 +1,13 @@
+
+export default function Header() {
+  return (
+    <div>
+        <nav className="flex flex-row justify-between m-5">
+            <h1 className="text-break.away-blue text-2xl">Break.Away</h1>
+            <button className="bg-break.away-blue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                Suscribirse
+            </button>
+        </nav>      
+    </div>
+  )
+}
