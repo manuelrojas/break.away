@@ -17,6 +17,10 @@ html {
     font-family: 'cera-pro-bold';
 }
 
+body {
+    width: 100vh;
+}
+
 .medium-font {
     font-family: 'cera-pro-medium';
 }
