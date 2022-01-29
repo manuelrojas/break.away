@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from './components/header'
 import Main from './components/main'
 import List from './components/list'
+import NewsletterSubscribe from './components/suscribe'
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <Header />
       <Main />
       <List />
-      
+      <NewsletterSubscribe />
     </div>
   )
 }
