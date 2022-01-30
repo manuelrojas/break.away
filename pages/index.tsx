@@ -3,6 +3,7 @@ import Header from './components/header'
 import Main from './components/main'
 import List from './components/list'
 import NewsletterSubscribe from './components/suscribe'
+import Banner from './components/banner'
 
 export default function Home() {
   return (
@@ -13,7 +14,11 @@ export default function Home() {
       </Head>
       <Header />
       <Main />
+      <h1 className="text-break.away-blue  text-3xl md:text-4xl text-center mt-10">
+        Próximamente...
+      </h1>
       <List />
+      <Banner />
       <NewsletterSubscribe />
     </div>
   )

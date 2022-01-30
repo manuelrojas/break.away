@@ -70,7 +70,7 @@ const NewsletterForm = ( { status, message, onValidated } : NewsProps) => {
 
   return (
     <>
-      <div className="w-full max-w-md border border-black rounded-3xl self-center m-10 flex flex-col px-8 pt-6 mb-4">
+      <div className="md:w-full max-w-md border border-black rounded-3xl self-center m-10 flex flex-col px-8 pt-6 mb-4">
         <input
             onChange={(event) => setName(event?.target?.value ?? '')}
             type="text"
