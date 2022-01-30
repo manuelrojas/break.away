@@ -70,13 +70,13 @@ const NewsletterForm = ( { status, message, onValidated } : NewsProps) => {
 
   return (
     <>
-      <div className="w-full max-w-md border border-black rounded-3xl self-center m-10 flex flex-col px-8 pt-6 pb-8 mb-4">
+      <div className="w-full max-w-md border border-black rounded-3xl self-center m-10 flex flex-col px-8 pt-6 mb-4">
         <input
             onChange={(event) => setName(event?.target?.value ?? '')}
             type="text"
             placeholder="Nombre o Empresa"
             name="FNAME"    
-            className="appearance-none placeholder-black w-full text-center border-black border-b py-2 px-3 mb-10 leading-tight focus:outline-none focus:shadow-outline"
+            className="medium-font appearance-none placeholder-black w-full text-center border-black border-b py-2 px-3 mb-10 leading-tight focus:outline-none focus:shadow-outline"
             onKeyUp={(event) => handleInputKeyEvent(event)}
         /> 
         <input
@@ -84,26 +84,26 @@ const NewsletterForm = ( { status, message, onValidated } : NewsProps) => {
             type="email"
             name="EMAIL"
             placeholder="Correo electrónico"
-            className="appearance-none w-full text-center placeholder-black border-black border-b py-2 px-3 mb-10 leading-tight focus:outline-none focus:shadow-outline"
+            className="medium-font appearance-none w-full text-center placeholder-black border-black border-b py-2 px-3 mb-10 leading-tight focus:outline-none focus:shadow-outline"
             onKeyUp={(event) => handleInputKeyEvent(event)}
         />
-        <div className="bg-break.away-blue rounded-3xl hover:bg-break.away-blue text-center text-white py-2 px-10 focus:outline-none focus:shadow-outline self-center">
-          <button onClick={handleFormSubmit}>
-            Enviar
-          </button>
+       
+        <button className="medium-font bg-break.away-blue rounded-3xl hover:bg-break.away-blue text-center text-white py-1 px-8 focus:outline-none focus:shadow-outline self-center" onClick={handleFormSubmit}>
+          Enviar
+        </button>
           
-        </div>
-
-        <div className="newsletter-form-info">
-            {status === "sending" && <div>Sending...</div>}
+        <div className="medium-font pt-5">
+            {status === "sending" && <div className="text-break.away-blue text-center">Enviando...</div>}
             {status === "error" || error ? (
             <div
-                className="newsletter-form-error"
+                className="text-red-700 text-center pb-5"
                 dangerouslySetInnerHTML={{ __html: error as string || getMessage( message ) as string }}
             />
             ) : null }
             {status === "success" && !error && (
-            <div dangerouslySetInnerHTML={{ __html: decode(message) }} />
+            <div 
+              className="text-break.away-blue text-center pb-5"
+              dangerouslySetInnerHTML={{ __html: decode(message) }} />
             )}
         </div>
       </div>
