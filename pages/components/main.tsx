@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Fade from 'react-reveal/Fade'
 
 export default function Main() {
     return (
@@ -12,7 +13,7 @@ export default function Main() {
                     </button>
                 </div>
                 <div>
-                    <div className="md:hidden flex justify-center gap-8 mt-1">
+                    <div className="md:hidden flex justify-center gap-8 mt-1">             
                         <div className="mt-20">
                             <Image
                                 src="/imgs/illustration_2.png"
@@ -31,25 +32,30 @@ export default function Main() {
                             /> 
                         </div>
                     </div>
-                    <div className="hidden md:block md:absolute md:mt-10">
-                        <Image
-                            src="/imgs/illustration_1.png"
-                            alt="cyclistOne"
-                            height={426}
-                            width={370}  
-                        />
-                    </div>
+                    <Fade right>
+                        <div className="hidden md:block md:absolute md:mt-10">
+                            <Image
+                                src="/imgs/illustration_1.png"
+                                alt="cyclistOne"
+                                height={426}
+                                width={370}  
+                            />
+                        </div>
+                    </Fade>
                </div>
             </div>
+           
             <div className="flex flex-col md:flex-row justify-center"> 
-                <div className="hidden md:block">
-                    <Image
-                        src="/imgs/illustration_2.png"
-                        alt="cyclistTwo"
-                        height={535}
-                        width={515}
-                    />
-                </div> 
+                <Fade left>
+                    <div className="hidden md:block">
+                        <Image
+                            src="/imgs/illustration_2.png"
+                            alt="cyclistTwo"
+                            height={535}
+                            width={515}
+                        />
+                    </div> 
+                </Fade>
                 <div className="text-center md:text-left self-center mx-20 md:mt-10">
                     <h1 className="text-2xl sm:text-4xl">
                         Sé parte de
