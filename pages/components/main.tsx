@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Fade from 'react-reveal/Fade'
+const Fade = require('react-reveal/Fade');
 
 export default function Main() {
     return (
