@@ -3,7 +3,7 @@ const Fade = require('react-reveal/Fade');
 
 export default function List() {
     return (
-      <Fade top> 
+      <Fade left> 
         <div className="flex flex-col md:flex-row content-between gap-10 justify-center mt-10 px-20">
 
             <Image
