@@ -5,7 +5,7 @@ import List from './components/list'
 import NewsletterSubscribe from './components/suscribe'
 import Banner from './components/banner'
 import Footer from './components/footer'
-import Fade from 'react-reveal/Fade'
+const Fade = require('react-reveal/Fade');
 
 export default function Home() {
   return (
