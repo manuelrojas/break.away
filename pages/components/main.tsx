@@ -16,7 +16,7 @@ export default function Main() {
                 </div>
                 <div>
                     <div className="md:hidden flex justify-center gap-8 mt-1">  
-                        <Fade left>
+                        
                             <div className="mt-20">
                                 <Image
                                     src="/imgs/illustration_2.png"
@@ -25,8 +25,8 @@ export default function Main() {
                                     width={173}
                                 />
                             </div>
-                        </Fade>           
-                        <Fade right>    
+                                 
+                     
                             <div className="mt-5">
                                 <Image
                                     src="/imgs/illustration_1.png"
@@ -36,7 +36,7 @@ export default function Main() {
                                     className="self-end"
                                 /> 
                             </div>
-                        </Fade>
+                      
                     </div>
                     <Fade right>
                         <div className="hidden md:block md:absolute md:mt-10">
