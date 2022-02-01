@@ -8,7 +8,7 @@ export default function Main() {
                 <div className="flex items-center flex-col">
                     <h1 className="text-5xl lg:text-6xl">¡Este podría</h1>
                     <h1 className="text-5xl lg:text-6xl">ser tu ride!</h1>
-                    <a href="#info">
+                    <a>
                         <button className="bg-transparent mt-5 md:mt-1 hover:bg-break.away-blue hover:text-white border border-break.away-blue font-bold py-2 px-4 rounded-full">
                             Más info
                         </button>
