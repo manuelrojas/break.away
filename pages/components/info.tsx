@@ -11,7 +11,7 @@ export default function Info({ place } : InfoProps) {
             <h1 className="text-white">
                 {place}
             </h1>
-            <p className="text-gray-600 medium-font">
+            <p className="text-white medium-font">
                 organiza...
             </p>
         </div>
